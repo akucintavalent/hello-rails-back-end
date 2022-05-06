@@ -1,3 +1,6 @@
 class GreetingsController < ApplicationController
-  def message; end
+  def message
+    @message = Greeting.all.sample.message
+    render json: @message
+  end
 end
