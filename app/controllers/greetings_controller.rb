@@ -1,4 +1,3 @@
 class GreetingsController < ApplicationController
-  def message
-  end
+  def message; end
 end
